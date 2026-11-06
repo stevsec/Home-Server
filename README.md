@@ -25,13 +25,14 @@ Inspired by [The $0 Home Server – Kalos Likes Computers](https://youtu.be/IuRW
 | RAM | 2 GB |
 | Storage | 320 GB |
 | Network | Ethernet |
+| Architecture | 64-bit |
 | Power | Charger only (battery removed) |
 
 <img width="532.5" height="219.5" alt="image" src="https://github.com/user-attachments/assets/d6330aea-0a13-4c18-ac1b-16ceea37b098" />
 
 
 
-### Modification/Changes made before starting (and other useful info)
+### Fixing The Hardware Before Starting
 The laptop crashed whenever it was under load.
  
 - **Cause:** Overheating. The old thermal paste was caked on, and a previous owner had put a piece of clear red tape between the heatsink and the CPU.
@@ -39,12 +40,18 @@ The laptop crashed whenever it was under load.
 - **Result:** No more crashes, and temperatures dropped.
 
 
-### Operating System
-- OS: Ubuntu Server
-- Version: 26.04 LTS
+### Architecture
+<pre><code>  iPhone ── Tailscale ──┐
+                        ▼
+  Windows 11 PC ──── Samba ────►  ThinkPad X201 · Ubuntu Server 26.04
+                                 ├─ SSH
+                                 ├─ Samba
+                                 └─ Docker
+                                     ├─ Navidrome (music)
+                                     └─ Jellyfin (movies, TV, music)</code></pre>
 
 
-### Users
+### Operating System and Access
 - **OS:** Ubuntu Server 26.04 LTS
 - **Users:** Just me
 - **SSH Enabled?:** Yes (password enabled)
