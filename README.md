@@ -1,6 +1,6 @@
 ### CURRENT PROJECT:
 
-# Ubuntu Server Documentation
+# Home Server Documentation
 
 ### Overview
 
