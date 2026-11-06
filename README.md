@@ -1,6 +1,6 @@
-### CURRENT PROJECT:
+## Home Server Documentation
 
-# Home Server Documentation
+A $0 server, built on a 2010 ThinkPad
 
 ![Linux](https://img.shields.io/badge/Linux-OS-FCC624?logo=linux&logoColor=black)
 ![Ubuntu Server](https://img.shields.io/badge/Ubuntu_Server-26.04_LTS-E95420?logo=ubuntu&logoColor=white)
@@ -8,54 +8,77 @@
 ![Samba](https://img.shields.io/badge/Samba-file_sharing-CC0000?logo=samba&logoColor=white)
 ![Tailscale](https://img.shields.io/badge/Tailscale-remote_access-242424?logo=tailscale&logoColor=white)
 
-### Overview
 
-- The purpose for this is to learn more about the IT side of computing. The 2nd reason is set up media server.
-  - The $0 Home Server - Kalos Likes Computers
-  - https://youtu.be/IuRWqzfX1ik?si=NFn_1WRt_5dBWWkG
----
+### Why I Built This
+
+- **Learn the IT side of computing:** Linux, networking, containers, self-hosting, and remote access
+- **Run a personal media server** for my music, movies, and TV shows
+
+Inspired by [The $0 Home Server – Kalos Likes Computers](https://youtu.be/IuRWqzfX1ik)
+
+
 ### Hardware
-- Machine: 12" Lenovo Thinkpad x201 (released in 2010)
-- CPU: Intel Core i5
-- Ram: 2gb
-- Storage: 320gb
-- Network: Ethernet
-- 64 bit Operating System
----
+| Part | Specs |
+|------|------|
+| Machine | Lenovo ThinkPad X201 (12", released 2010) |
+| CPU | Intel Core i5 |
+| RAM | 2 GB |
+| Storage | 320 GB |
+| Network | Ethernet |
+| Power | Charger only (battery removed) |
+
+<img width="532.5" height="219.5" alt="image" src="https://github.com/user-attachments/assets/d6330aea-0a13-4c18-ac1b-16ceea37b098" />
+
+
+
 ### Modification/Changes made before starting (and other useful info)
-  - Computer used to crash when stressed out. Diagnosed the issue. Bought some Thermal Paste to replaced the old Thermal paste. Turns out whoever owned this laptop before me added a red clear piece of tape between the heatsink and the CPU. Also the Thermal Paste was caked on. Replaced it and the laptop stopped crashing. Tempature also dropped. Does not overheat anymore.
-  - Battery was removed. Will only operate with the charger. Uses Ethernet.
----
+The laptop crashed whenever it was under load.
+ 
+- **Cause:** Overheating. The old thermal paste was caked on, and a previous owner had put a piece of clear red tape between the heatsink and the CPU.
+- **Fix:** Removed the tape, cleaned off the old paste, and applied new thermal paste.
+- **Result:** No more crashes, and temperatures dropped.
+
+
 ### Operating System
 - OS: Ubuntu Server
 - Version: 26.04 LTS
----
+
+
 ### Users
-- Primary User: Me
-- Other Users: No
-- SSH Enabled?: Yes
-- Auth Method: Password
----
+- **OS:** Ubuntu Server 26.04 LTS
+- **Users:** Just me
+- **SSH Enabled?:** Yes (password enabled)
+- **Remote Access:** Tailscale
+
+
 ### Installed Services
-- **SSH:** For remote access
-- **Samba:** To share files between Linux and Windows
-- **Docker:** To run apps in containers to not mess up the server
-- **Navidrome:** To self-host my music file
-- **Jellyfin:** To self-host music, movies, TV shows, and other personal media
-- **Substreamer:** To listen to self-hosted music from **Navidrome** on my ios device
-- **Fastfetch:** To display system information in the terminal
-- **Ncdu:** To display disk usage in the terminal
----
+| Service | What it does |
+|---------|--------------|
+| SSH | Remote access |
+| Samba | File sharing between Linux and Windows |
+| Docker | Runs apps in containers |
+| Navidrome | Music streaming |
+| Jellyfin | Music, movies, and TV |
+| Tailscale | Secure remote access |
+| Fastfetch | System info in the terminal |
+| Ncdu | Disk usage in the terminal |
+
+
 ### Change Logs
-- **04-29-2026:** Installed Ubuntu Sever 26.04 LTS
-- **04-29-2026:** Installed Samba
-- **04-29-2026:** Installed Docker
-- **04-29-2026:** Deleted old Docker since it was outdated and reinstalled Docker from their official repository
-- **04-30-2026:** Installed Fastfetch
-- **04-30-2026:** Successfully installed Navidrome after a couple failed attempts (Installed in Docker)
-- **05-01-2026:** Uploaded music files to Navidrome
-- **05-02-2026:** Installed Jellyfin on Docker
-- **05-04-2026:** Installed Ncdu
-- **05-07-2026:** Set up Tailscale
----
-### Notes:
+| Date | Change |
+|------|--------|
+| 2026-04-29 | Installed Ubuntu Server 26.04 LTS |
+| 2026-04-29 | Installed Samba |
+| 2026-04-29 | Installed Docker (replaced the outdated version with the official one) |
+| 2026-04-30 | Installed Fastfetch |
+| 2026-04-30 | Installed Navidrome in Docker after a few failed attempts |
+| 2026-05-01 | Uploaded music to Navidrome |
+| 2026-05-02 | Installed Jellyfin in Docker |
+| 2026-05-04 | Installed Ncdu |
+| 2026-05-07 | Set up Tailscale |
+
+### Future Plans:
+- [ ] Add monitoring (Uptime Kuma)
+- [ ] Add a dashboard
+- [ ] Install Gitea
+- [ ] Install and set up Vaultwarden
