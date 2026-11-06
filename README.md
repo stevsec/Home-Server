@@ -2,7 +2,7 @@
 
 # Home Server Documentation
 
-![Linux](https://img.shields.io/badge/Linux-server-FCC624?logo=linux&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-OS-FCC624?logo=linux&logoColor=black)
 ![Ubuntu Server](https://img.shields.io/badge/Ubuntu_Server-26.04_LTS-E95420?logo=ubuntu&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-containers-2496ED?logo=docker&logoColor=white)
 ![Samba](https://img.shields.io/badge/Samba-file_sharing-CC0000?logo=samba&logoColor=white)
